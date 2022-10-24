@@ -161,3 +161,8 @@ h1 {
 details {
   font-weight: 400;
 }
+
+.required::after {
+  content: "*";
+  color: red;
+}
