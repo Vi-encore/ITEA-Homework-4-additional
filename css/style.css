@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+p,
+body {
+  margin: 0;
+}
+
+body {
+  background-color: rgb(160, 160, 160);
+}
+
+main {
+  width: 900px;
+  margin: 30px auto;
+  font-family: "Roboto";
+  font-size: 13px;
+  box-shadow: 4px 4px 15px rgba(101, 101, 101, 0.5);
+  transition: all 200ms ease-in-out;
+}
+
+main:hover {
+  box-shadow: 4px 4px 10px rgba(101, 101, 101, 0.9);
+  border-radius: 4px;
+}
+label,
+summary,
+p {
+  font-weight: 600;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(193, 235, 159);
+  border: 1px rgb(227, 227, 227) solid;
+  border-radius: 4px 4px 0 0;
+}
+
+details {
+  margin: 0 50px;
+}
+
+.form {
+  border: 1px rgb(227, 227, 227) solid;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  border-radius: 0 0 4px 4px;
+}
+
+.container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.form_footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(227, 227, 227);
+}
+
+.user_info {
+  width: 45%;
+  margin: 11px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user_info_multiple {
+  display: flex;
+}
+
+.contact_time_way {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.answer {
+  width: 30%;
+}
+
+.user_info_url {
+  margin-bottom: 5px;
+}
+
+.user_info_url,
+.user_info_link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.url_link {
+  width: 50%;
+}
+
+.way_time {
+  display: block;
+  width: 55%;
+}
+
+input,
+select,
+textarea {
+  width: 50%;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: 120px;
+  height: 30px;
+  margin: 5px 3px;
+  font-family: "Roboto";
+  font-weight: 800;
+  font-size: 16px;
+  background-color: rgb(145, 186, 111);
+  border: 1px solid rgba(145, 186, 111, 0);
+  border-radius: 4px;
+  color: white;
+  transition: all 100ms ease-in-out;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  box-shadow: 4px 4px 10px rgba(101, 101, 101, 0.3);
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active {
+  box-shadow: 4px 4px 4px rgba(101, 101, 101, 0.3);
+  background-color: rgb(80, 142, 85);
+  border: 1px solid rgba(145, 186, 111, 0);
+}
+
+input[type="radio"] {
+  width: auto;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+.contact_time_way > label,
+.user_info_url > label,
+.user_info_link > label,
+details {
+  font-weight: 400;
+}

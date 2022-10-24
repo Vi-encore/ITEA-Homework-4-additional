@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <h1>Contact Manager</h1>
+        <details>
+          <summary>More actions</summary>
+          To have access for more actions - contact our manager.
+        </details>
+      </div>
+      <form class="form" method="post">
+        <div class="container">
+          <div class="user_info">
+            <label for="first_name">First Name:</label>
+            <input
+              type="text"
+              id="first_name"
+              name="user_first_name"
+              placeholder="Type your first name"
+              value=""
+              required
+            />
+          </div>
+          <div class="user_info">
+            <label for="last_name">Last Name:</label>
+            <input
+              type="text"
+              id="last_name"
+              name="user_last_name"
+              placeholder="Type your last name"
+              value=""
+              required
+            />
+          </div>
+          <div class="user_info">
+            <label for="user_address">Address:</label>
+            <textarea
+              id="user_address"
+              name="user_address"
+              placeholder="Type your address"
+            >
+            </textarea>
+          </div>
+          <div class="user_info">
+            <label for="user_city">City:</label>
+            <input
+              type="text"
+              id="user_city"
+              name="user_city"
+              placeholder="Type your city"
+              value=""
+            />
+          </div>
+          <div class="user_info">
+            <label for="user_state">State:</label>
+            <select id="user_state" name="user_state">
+              <option value="" selected disabled>-Select-</option>
+              <option value="usa">USA</option>
+              <option value="uk">United Kingdom</option>
+              <option value="france">France</option>
+              <option value="ukraine">Ukraine</option>
+              <option value="poland">Poland</option>
+              <option value="another">Another</option>
+            </select>
+          </div>
+          <div class="user_info">
+            <label for="user_zip">Zip:</label>
+            <input
+              type="text"
+              id="user_zip"
+              name="zip_code"
+              placeholder="Digits only"
+              inputmode="numeric"
+              pattern="\d*"
+              minlength="4"
+              value=""
+            />
+          </div>
+          <div class="user_info">
+            <label for="user_home_num">Home Phone:</label>
+            <input
+              type="tel"
+              id="user_home_num"
+              name="home_phone"
+              placeholder="Eg +447500000000"
+              value=""
+            />
+          </div>
+          <div class="user_info">
+            <label for="user_work_num">Work Phone:</label>
+            <input
+              type="tel"
+              id="user_work_num"
+              name="work_phone"
+              placeholder="Eg +447500000000"
+              value=""
+              required
+            />
+          </div>
+          <div class="user_info">
+            <label for="user_fax">Fax Number:</label>
+            <input
+              type="tel"
+              id="user_fax"
+              name="work_phone"
+              placeholder="Type fax number"
+              value=""
+            />
+          </div>
+          <div class="user_info user_info_multple user_info_wider">
+            <p>Website</p>
+            <div class="url_link">
+              <div class="user_info_url">
+                <label for="user_url">URL</label>
+                <input
+                  type="url"
+                  id="user_url"
+                  name="user_url"
+                  placeholder="https://example.com"
+                  pattern="https://.*"
+                  value=""
+                />
+              </div>
+              <div class="user_info_link">
+                <label for="user_link">Link Name</label>
+                <input type="text" id="user_link" name="user_link" value="" />
+              </div>
+            </div>
+          </div>
+          <div class="user_info">
+            <label for="user_email">Email Address: </label>
+            <input
+              type="email"
+              id="user_email"
+              name="user_email"
+              placeholder="someonesemail@post.com"
+              value=""
+              required
+            />
+          </div>
+          <div class="user_info user_info_multiple">
+            <p class="way_time">What is the best time to contact you?</p>
+            <div class="answer">
+              <div class="contact_time_way">
+                <label for="morning">Morning</label>
+                <input type="radio" value="morning" name="time" id="morning" />
+              </div>
+              <div class="contact_time_way">
+                <label for="afternoon">Afternoon</label>
+                <input
+                  type="radio"
+                  value="afternoon"
+                  name="time"
+                  id="afternoon"
+                />
+              </div>
+              <div class="contact_time_way">
+                <label for="evening">Evening</label>
+                <input type="radio" value="evening" name="time" id="evening" />
+              </div>
+            </div>
+          </div>
+          <div class="user_info user_info_multiple">
+            <p class="way_time">What is the best way to contact you?</p>
+            <div class="answer">
+              <div class="contact_time_way">
+                <label for="phone">Phone</label>
+                <input type="radio" value="phone" name="way" id="phone" />
+              </div>
+              <div class="contact_time_way">
+                <label for="email">Email</label>
+                <input type="radio" value="email" name="way" id="email" />
+              </div>
+              <div class="contact_time_way">
+                <label for="fax">Fax</label>
+                <input type="radio" value="fax" name="way" id="fax" />
+              </div>
+            </div>
+          </div>
+          <div class="user_info">
+            <label for="user_message">Message:</label>
+            <textarea
+              id="user_message"
+              name="user_message"
+              placeholder="Type your message"
+            >
+            </textarea>
+          </div>
+        </div>
+        <div class="form_footer">
+          <div class="submit">
+            <label for="submit"></label>
+            <input type="submit" id="submit" name="submit" value="Submit" />
+          </div>
+          <div class="reset">
+            <label for="reset"></label>
+            <input type="reset" id="reset" name="reset" value="Reset" />
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
